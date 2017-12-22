@@ -1,16 +1,18 @@
-class Contact < ApplicationRecord
+class Contact 
 	include ActiveModel::Conversion
 	include ActiveModel::Validations
 
 	attr_accessor :name, :phone, :email, :message
+	
 	def initialize(params: {})
 		@name = params[:name]
 		@phone = params[:phone]
 		@email = params[:email]
 		@message = params[:message]
 	end
+
 	def persisted?
-	  false
+	   false
 	end
 
 	validates :name,
@@ -31,7 +33,7 @@ class Contact < ApplicationRecord
     		  allow_blank: false,
     		  length: {minimum: 3, maximum: 245}
 
-    valdiates :message,
+    validates :message,
     		  presence: true,
     		  uniqueness: false,
     		  allow_blank: false,

@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # @implemented
-  namespace :api, constraints: { subdomain: 'api' } do 
+  namespace :api, constraint: { subdomain: 'api' } do 
   	namespace :v1 do 
   	 with_options only: :index do |list|
   	 	list.resources :films 

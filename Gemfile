@@ -50,6 +50,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'factory_bot'
   gem 'ffaker'
+  gem 'jquery-rails'
 end
 
 group :development do

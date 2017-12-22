@@ -40,7 +40,7 @@ Film.create({
 
 Film.create({
  name: 'Eu odeio o Orkut',
- descripton: "Internado em uma clínica  de desintoxicação orkutiana e outros males
+ description: "Internado em uma clínica  de desintoxicação orkutiana e outros males
  virtuais, o dependente, em fase terminal, Jader Bertola, faz um download de suas 
  memórias para um colega de quarto, quase analfabeto e totalmente perturbado, para
  escrever um livro contando sua trajetória infeliz: Do nascimento ao 'offline do 
@@ -214,3 +214,19 @@ Film.create({
 
  2009 - SUSPENSE - 23 MINUTOS"
 })
+
+
+# Projects
+# @implemented
+=begin
+Project.create({
+ name: 'Alvoroço nas Escolas',
+ description: "ALVOROÇO NAS ESCOLAS é uma iniciativa inédita, de regionalização do 
+ cinema, mas acima de tudo de unir educação e cultura de forma simples, prática e 
+ criativa, contribuindo assim para a preparação e formação de novos atores, roteiristas,
+ diretores, profissionais de audiovisual e claro, espectadores mais atentos e criticos do 
+ do cinema nacional, estimulando a curiosidade pelo cinema, pela leitura e escrita, em
+ estudantes da rede pública municipal, com o apoio e parceria da secretaria municipal
+ de educação e prefeitura municipal de alvorada."
+})
+=end

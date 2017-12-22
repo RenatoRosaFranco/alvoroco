@@ -1,5 +1,18 @@
 <%= render partial: 'layouts/header' %>
 
+<div class='presenter' class='jumbotron'>
+   <div class='container'>
+	 <div class='row'>
+		<div class='col-md-12'>
+		    <ul class='list-unstyled text-center'>
+			   <li><h1>ALVOROÇO FILMES</h1></li>
+			   <li><p> Lorem ipsum lorem siamet dolor.</p></li>
+		    </ul><!-- list-unstyled -->
+		 </div><!--  col-md-12 -->
+	  </div><!-- row -->
+   </div><!-- container -->
+</div><!-- presenter -->
+
 <section id='about'>
   <div class='container'>
   	 <div class='row'>
@@ -50,7 +63,6 @@
   </div><!-- container -->
 </section>
 	
-
 <section id='contact'>
 	<div class='container'>
 	   <div class='row'>
@@ -60,12 +72,12 @@
 	   	  	 	<li>Entre em contato conosco.</li>
 	   	  	 	<li><hr></li>
 
-	   	  	 	<%= render partial: 'layouts/form' %>
+	   	  	 	<%= render partial: 'contact/form' %>
 
-	   	  	 </ul>
-	   	  </div>
-	   </div>
-	</div>
-</section>
+	   	  	 </ul><!-- list-unstyled -->
+	   	  </div><!-- col-md-12 -->
+	   </div><!-- row -->
+	</div><!-- container -->
+</section><!-- contact -->
 
-<%= render partial: 'layouts/form' %>
+<%= render partial: 'layouts/footer' %>
