@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
-  
-  namespace :dashboard do
-    get 'home/index'
-  end
+
 
   # Application
   # @implemented
   root to: 'home#index'
-  resource :contact, only: [:create] 
-  resource :newsletter, only: [:create, :destroy]
+  resources :films, only: [:index, :show]
+  resources :projects, only: [:index, :show]
+  resource  :contact, only: [:create] 
+  resource  :newsletter, only: [:create, :destroy]
 
   # User built-in dashboard
   # @implemented
@@ -27,6 +26,7 @@ Rails.application.routes.draw do
   	 with_options only: :index do |list|
   	 	list.resources :films 
   	 	list.resources :projects	
+  	 	list.resources :videos
   	  end	
   	end
   end

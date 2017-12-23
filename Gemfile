@@ -52,6 +52,7 @@ group :development, :test do
   gem 'ffaker'
   gem 'jquery-rails'
   gem 'angularjs-rails'
+  gem 'carrierwave'
 end
 
 group :development do

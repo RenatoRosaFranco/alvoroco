@@ -11,6 +11,25 @@
 	 }
 	}
 
+	#home {
+	 position: relative;
+	 height: 540px;
+	 ul:nth-child(1){
+	  position: relative;
+	  margin-top: 140px;
+	 }
+	}
+
+	.project, .film {
+	 position: relative;
+	 a {
+	  width: 100%;
+	  border: 2px solid #000;
+	  background-color: #FFF;
+	  color: #000;
+	 }
+	}
+
 	#contact {
 	 position: relative;
 	 form {

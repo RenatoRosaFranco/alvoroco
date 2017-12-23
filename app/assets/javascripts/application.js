@@ -44,6 +44,28 @@ app.controller('FilmsController', ['$http', '$log', function($http, $log){
    });
 }]);
 
+
+// TabController
+// @implemented
+app.controller('TabController', function(){
+	var alvoroco = this;
+	alvoroco.tab = 1;
+
+	// Set tab 
+	// @implemented
+	this.setTab = function(tab){
+	 alvoroco.tab = tab;
+	 console.log(alvoroco.tab);
+	}
+
+	// Get tab
+	// @implemented
+	this.getTab = function(tab){
+	 return alvoroco.tab == tab;
+	}
+
+});
+
 // Projects Controller
 // @implemented
 app.controller('ProjectsController', ['$http', '$log', function($http, $log){

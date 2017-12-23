@@ -222,10 +222,8 @@ Film.create({
  2009 - SUSPENSE - 23 MINUTOS"
 })
 
-
 # Projects
 # @implemented
-=begin
 Project.create({
  name: 'Alvoroço nas Escolas',
  description: "ALVOROÇO NAS ESCOLAS é uma iniciativa inédita, de regionalização do 
@@ -234,6 +232,66 @@ Project.create({
  diretores, profissionais de audiovisual e claro, espectadores mais atentos e criticos do 
  do cinema nacional, estimulando a curiosidade pelo cinema, pela leitura e escrita, em
  estudantes da rede pública municipal, com o apoio e parceria da secretaria municipal
- de educação e prefeitura municipal de alvorada."
+ de educação e prefeitura municipal de alvorada.
+
+ A regionalização da obra permite a identificação imediata do público com a história,
+ rica em elementos do seu cotidiano, tornando-o assim um espectador assíduo e orgulhoso
+ de sua cidade e origem.
+
+ O Projeto 'ALVOROÇO NAS ESCOLAS', iniciou no mês de maio onde mais de 2 mil alunos foram 
+ visitados e convidados a fazer parte desse novo jeito de fazer cinema.
+
+ Foram mais de 100 turmas em 12 escolas nos 3 turnos e uma certeza: Existia muita disposição
+ por parte dos estudantes em utilizar telas para expressar suas vontades, seus desejos e sua
+ criatividade.
+
+ As oficinas de preparação, o alicerce de todo o projeto, onde cada aluno, dos pré selecionados
+ , pode aprender com profissionais experientes e gabaritados como Artur José Pinto e Antonio Carlos
+ Falcão, alem de Evandro Berlesi e Rodrigo Castelhano, todo o processo de construção do filme. O roteiro
+ , a fotografia, a direção, a edição e claro, a interpretação e preparação dos atores.
+
+ Com o conhecimento em mãos, fomos às ruas contar as suas histórias. O período de produção envolveu 
+ a busca por cenários, personagens e elementos que representassem a verdade que nossos alunos queriam
+ colocar na tela.
+
+ Em agosto gravamos. E o que se viu foi muita disposição, entusiasmo e vontade. Cinema de verdade. Feito
+ de forma simples, criativa, mas com seriedade. Jovens Profissionais.
+
+ Eis o resultado: 4 histórias, 4 roteiros, 4 filmes, realizados em conjunto com os alunos das escolas
+ municipais de Alvorada. Um verdadeiro alvoroço nas escolas!"
 })
-=end
+
+Project.create({
+ name: "Alvoroço",
+ description: "O Projeto alvoroço é uma iniciativa inédita  de realização cinematográfica de 
+ caráter social, tendo sido destaque na mídia no ano de 2008,  na ocasião do primeiro longa metragem
+ totalmente produzido e gravado no municipio de Alvorada, RS.
+
+ Com elenco, equipe técnico e musica da trilha sonora, todos da cidade. Além da participação muito 
+ especial de Jairo Mattos, ator global, nascido no municipio.
+
+ O filme 'Dá 1 Tempo!' foi marco na produção independente de cinema, dando origem ao cinema de linguagem
+ regional, focado em uma cidade, suas origense e sua gente. Acima de tudo trouxe um resgate de auto estima
+ de uma população pobre e carente, mas que sonha com novos horizontes. Um pouco desse horizonte diferente 
+ poder ser visto nas telas em plena Praça Central, para um publico de mais de 20 mil pessoas, fato em analise
+ no livro Guiness.
+
+ Este ano a produtora dando seguimento ao seu projeto de um cinema diferente, de inclusão e forte apelo social 
+ , está produzindo a adaptação as telas, do livro 'Eu odeio o Orkut', do escritor Evandro Berlesi, de projeção
+ nacional e que com bom humor, trata da dependência dos jovens pela internet. Uma comédia absurda, mas com um 
+ bela mensagem de alerta e conscientização.
+
+ O elenco mais uma vez é formado por jovens atores iniciantes, selecionados em teste de elenco realizado na cidade
+ em maio deste ano.  Este mesmo elenco de 50 atores e atrizes passou por oficinas de interpretação e video ministrados
+ pelos diretores Evandro Berlesi e Rodrigo Castelhano, além de Antonio Carlos Falcão (conhecidíssimo ator de treatro gáucho).
+
+ O longa começa a  ser rodado em novembro no municipio e terá a participação do ator Julio Rocha, que interpreta Edgar na novela
+ 'Caras & Bocas', da atriz Luana Piovani, além de uma nova participação de Jairo Mattos.
+
+ O lançamento oficial será na praça central do municipio, no mês de junho de 2010 para um publico estimado superior a 30 mil 
+ pessoas e posteriormente distribuido em DVD gratuitamente em todas as videolocadoras e suas escolas da cidade, dando assim
+ acesso total a arte e cultura para toda a população.
+
+ Fora do ambito de Alvorada/RS, o filme 'Eu odeio o Orkut', será distribuido e promovido em todas as vídeolocadoras do país,
+ alem da cobertura por parte da midia deste grade projeto pioneiro."
+})

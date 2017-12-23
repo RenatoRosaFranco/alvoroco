@@ -22,12 +22,18 @@
 <section id='about'>
   <div class='container'>
   	 <div class='row'>
-  	 	<div class='col-md-12'>
+  	 	<div class='col-md-12' ng-controller='TabController as tabCtrl'>
   	 		 
   	 		 <ul class='breadcrumb'>
   	 		 	<li><%= link_to 'Home', '' %></li>
   	 		 </ul><!-- list-unstyled -->
 
+  	 		 <ul class='list-unstyled list-inline'>
+  	 		 	 <li><a href="" ng-click="tabCtrl.setTab(1)">ALVOROÇO FILMES</a></li>
+  	 		 	 <li><a href="" ng-click="tabCtrl.setTab(2)">EVANDRO BERLESI</a></li>
+  	 		 </ul><!-- list-unstyled -->
+
+  	 		<div class='row' ng-show="tabCtrl.getTab(1)">
   	 		 <div class='col-md-6'>
   	 		 	<div class='panel panel-default'>
   	 		 	  <ul class='list-unstyled text-center padding'> 
@@ -72,6 +78,60 @@
   	 		 	  </ul><!-- list-unstyled -->
   	 		 	</div><!-- panel panel-default -->
   	 		 </div><!-- col-md-12 -->
+  	 	   </div>
+
+  	 	   <div class='row' ng-show='tabCtrl.getTab(2)'>
+  	 	   	 <div class='col-md-12'>
+  	 	   	 	 <h2><strong>EVANDRO BERLESI</strong></h2>
+  	 	   	 	 <h5 class='badge'>Roteirista,Escritor e Diretor</h5>
+
+  	 	   	 	 <p>Engressou no unviverso artistico em 1995 através do teatro,
+  	 	   	 	 destacando-se como ator em diversas montagens cênicas. Descobriu
+  	 	   	 	 sua habilidade de escrever ainda na infancia, quando criava pequenos
+  	 	   	 	 roteiros de filmes sonhando um dia trabalhar com cinema.
+
+  	 	   	 	 Em 2005, com o curta metragem o Japonês da Coréia (direção de Rodrigo
+  	 	   	 	 Castelhano), seu 5 roteiro filmado, Evandro destacou-se na função de 
+  	 	   	 	 roteirista após acumular 10 prêmios em festivais nacionais, incluindo de 
+  	 	   	 	 melhor roteiro.	
+
+  	 	   	 	Em 2006 foi o grande vencedor do Prêmio Revelação Literária da Feira do 
+  	 	   	    Livro de Porto Alegre.
+
+  	 	   	    Em 2007, escreveu e lançou seu primeiro livro (independente) Eu odeio o 
+  	 	   	    Orkut, destacando-se nacionamente em programas como o programa do Jô (Rede Globo),
+  	 	   	    charme (SBT), Pânico (Jovem Pan)...
+
+  	 	   		Em 2008 lançou seu primeiro longa metragem (roteiro e direção, que divide com 
+  	 	   		Castelhano), a comédia romântica Dá 1 Tempo! (filme que teve estreia na 13 Mostra
+  	 	   	    de Cinema Tiradentes/MG) e seu segundo livro Arrependimento Mata (Besouro Box), 
+  	 	   	    recebendo da Prefeitura Municipal de Alvorada o titulo de honra ao mérito pelo 
+  	 	   	    trabalho realizado. Evandro também escreveu roteiros para televisão: seriado 
+  	 	   	    vidAnormal (TvCom/RBS) e duas micro-séries para o SBT, Verão o Amor e perfume de 
+  	 	   	    de Hortênsia (direção de Ivo Schergi Jr.). em 2009 inaugurou a produtora Alvoroço
+  	 	   	    Filmes realizando o projeto Alvoroço nas Escolas, onde diversos alunos da rede publica
+  	 	   	    da cidade aprenderam a fazer cinema na prática, realizando 4 curtas: Preserve-se, 
+  	 	   	    Tecnicamente Apavorados, Achei um violão e Tem gente! (selecionados para 4 festivais
+  	 	   	    de cinema em 2010)
+
+  	 	   	    Em maio de 2010 realizou um longe metragem em apenas 3 dias. Video Suícida é uma
+  	 	   	    experiencia cinematográfica totalmente independente e solitária. O filme foi escrito
+  	 	   	    , dirigido, produzido e editado por Evandro.
+
+  	 	   	    Em 2011 lançou o longa Eu odeio o Orkut, adaptação do seu livro, com Jairo Mattos, 
+  	 	   	    Julio Rocha e Luana Piovani no elenco (distribuição Amazon).
+
+  	 	   	    Devido ao sucesso da primeira edição do projeto. 2012 foi o ano do Alvoroço nas
+  	 	   	    Escolas 2, desta vez concluido com 5 curtas totalmente produzidos com alunos das
+  	 	   	    escolas municipais de Alvorada:  A gangue do batom, Quem vê bullying não ve coração, 
+  	 	   	    O ano do tsunami (Selecionado para 11 Santa Maria Vídeo e Cinema/2013) e traz papel!
+  	 	   	    (Vencedor do 7 festival Cine Favela-SP).
+
+  	 	   		No momento Evandro está em fase de pré produção do seu 4 longa metragem, seguindo a sua 
+  	 	   		"Trilogia do Ódio" com Eu odeio o Big Bróther, e publicando seu terceiro livro Game Over
+  	 	   	    - um inferno chamado casamento, (Besouro Box), lançamento previsto para Junho/2013.</p>
+  	 	   	 </div>
+  	 	   </div> 
 
   	 	</div><!-- col-md-12 -->
   	 </div><!-- row -->
@@ -88,11 +148,12 @@
    	  		   <li><hr></li>
    	  		</ul><!-- list-unstyled -->
 
-   	  		<div class='col-md-4' ng-repeat="project in projectCtrl.films">
+   	  		<div class='project col-md-4' ng-repeat="project in projectCtrl.projects">
    	  		  <div class='panel panel-default'>
-   	  		  	<ul class='list-unstyled'>
-   	  		  	   <li><a href=''><h4>{{ project.name }}</h4></li></a>
-   	  		  	   <li><p>{{ project.description }}</p></li>
+   	  		  	<ul class='list-unstyled padding'>
+   	  		  	   <li><a href=''><h4><strong>{{ project.name }}</strong></h4></li></a>
+   	  		  	   <li><p>{{ project.description | limitTo : 70 }}</p></li>
+   	  		  	   <li><%= link_to 'VER MAIS', '', class: 'btn btn-primary btn-lg top' %></li>
    	  		  	</ul><!-- list-unstyled -->
    	  		  </div><!-- panel panel-default -->
    	  		</div><!-- col-md-4 -->
@@ -126,11 +187,12 @@
   	   	  	</div><!-- col-md-4 -->
   	   	  </div><!-- col-md-12 -->
 
-  	   	  <div class='col-md-4' ng-repeat="film in filmCtrl.films | filter: name ">
+  	   	  <div class='film col-md-4' ng-repeat="film in filmCtrl.films | filter: name ">
   	   	  	 <div class='panel panel-default'>
   	   	  	 	<ul class='list-unstyled padding'>
   	   	  	 		<li><a href=''><h4><strong>{{ film.name }}</strong></h4></a></li>
   	   	  	 		<li><p>{{ film.description | limitTo: 120 }}</p></li>
+  	   	  	 		<li><%= link_to 'VER MAIS', '', class: 'btn btn-primary btn-lg top' %></li>
   	   	  	 	</ul><!-- list-unstyled -->
   	   	  	 </div><!-- panel panel-default -->
   	   	  </div><!-- col-md-4 -->
@@ -144,14 +206,31 @@
 	<div class='container'>
 	   <div class='row'>
 	   	  <div class='col-md-12'>
-	   	  	 <ul class='list-unstyled'>
+	   	  	 <ul class='list-unstyled text-center'>
 	   	  	 	<li><h2><i class='glyphicon glyphicon-search'></i> CONTATO</h2></li>
 	   	  	 	<li>Entre em contato conosco.</li>
 	   	  	 	<li><hr></li>
+	   	  	 </ul><!-- lsit-unstyled -->
 
-	   	  	 	<%= render partial: 'contact/form' %>
+	   	  	 <div class='col-md-4'>
+	   	  	 	<ul class='list-unstyled'>
+	   	  	 	 <li><h4><strong>EVANDRO BERLESI</strong></h4></li>
+	   	  	 	 <li><h5>TELEFONE</h5></li>
+	   	  	 	 <ul class='list-unstyled list-inline'>
+	   	  	 	  <li><i class='glyphicon glyphicon-search'></i> (51) 3442-5003</li>
+	   	  	 	  <li><i class='glyphicon glyphicon-search'></i> (51) 9132-8199</li>
+	   	  	 	 </ul><!-- list-unstyled -->
+	   	  	 	 <li><h5>E-MAILS</h5></li>
+	   	  	 	 <ul class='list-unstyled'>
+	   	  	 	   <li><i class='glyphicon glyphicon-search'></i> evando@alvoroco.com</li>
+	   	  	 	   <li><i class='glyphicon glyphicon-search'></i> alvoroco@alvoroco.com.br</li>
+	   	  	 	 </ul><!-- list-unstyled -->
+	   	  	 	</ul><!-- list-unstyled -->
+	   	  	 </div><!-- col-md-4 -->
 
-	   	  	 </ul><!-- list-unstyled -->
+	   	  	 <div class='col-md-8'>
+	   	  	   <%= render partial: 'contact/form' %>
+	   	   	 </div>
 	   	  </div><!-- col-md-12 -->
 	   </div><!-- row -->
 	</div><!-- container -->
