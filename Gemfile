@@ -51,6 +51,7 @@ group :development, :test do
   gem 'factory_bot'
   gem 'ffaker'
   gem 'jquery-rails'
+  gem 'angularjs-rails'
 end
 
 group :development do

@@ -22,7 +22,7 @@
 // @implemented
 var app = angular.module('app', []);
 app.controller('ApplicationController', ['$http', '$log', function($http, $log){
-
+  
 }]);
 
 // FilmsController 
@@ -31,6 +31,8 @@ app.controller('FilmsController', ['$http', '$log', function($http, $log){
    var alvoroco = this;
    alvoroco.films || [];
 
+   // http request
+   // @implemented
    $http({
    	 url: '/api/v1/films',
    	 method: 'GET'
@@ -47,13 +49,15 @@ app.controller('FilmsController', ['$http', '$log', function($http, $log){
 app.controller('ProjectsController', ['$http', '$log', function($http, $log){
 	var alvoroco = this;
 	alvoroco.projects || [];
-
+    
+    // http request
+    // @implemented
 	$http({
 	  url: '/api/v1/projects',
 	  method: 'GET'
 	}).then(function (response){
 	  alvoroco.projects = response.data;
-	  console.log(response.data)
+	  console.log(response.data);
 	}).then(function (error){
 	  console.log(error);
 	});

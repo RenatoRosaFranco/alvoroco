@@ -13,8 +13,15 @@
 # @implemented
 Film.delete_all
 Project.delete_all
+User.delete_all
 
 # @implemented
+User.create({
+ email: 'renato_ny@live.com',
+ password: '3223001r',
+ password_confirmation: '3223001r'	
+})
+
 Film.create({
   name: 'Da 1 Tempo',
   description: 'imagine uma mulher com o nome Laissa Golf... imaginou? 

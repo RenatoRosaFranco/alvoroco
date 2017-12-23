@@ -1,3 +1,53 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home{
+	
+	.navbar-default {
+	 a { 
+	  text-transform: uppercase;
+	  font-size: 13px;
+	 }
+	}
+
+	#contact {
+	 position: relative;
+	 form {
+
+	   .input-group-addon {
+	   	position: relative;
+	   	background-color: #FFF;
+	   	border-right: none;
+	   }
+	   input[type=text], input[type=email], input[type=tel]{
+	    position: relative;
+	    border-left: none;
+	    height: 40px; 
+	   }
+	   textarea {
+	    position: relative;
+	    resize: none;
+	    height: 120px;
+	   }
+	   input[type=submit] {
+	    position: relative;
+	    text-transform: uppercase;
+	    transition: 0.50s;
+	    &.over, &:hover {
+	     transition: 0.50s;
+	     cursor: pointer;
+	    }
+	   }
+	  }
+	 }
+
+
+	footer { 
+	 position: relative;
+	 margin-top: 40px;
+	 margin-bottom: 0px !important;
+	 padding-bottom: 50px;
+	}
+
+}

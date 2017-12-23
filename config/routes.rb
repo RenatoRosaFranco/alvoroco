@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
   
+  namespace :dashboard do
+    get 'home/index'
+  end
+
   # Application
   # @implemented
   root to: 'home#index'
   resource :contact, only: [:create] 
   resource :newsletter, only: [:create, :destroy]
+
+  # User built-in dashboard
+  # @implemented
+  namespace :dashboard do 
+  	get '', to: 'home#index'
+  end
 
   # Authentication
   # @implemtented
