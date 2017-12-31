@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Ruby version 
+# Ruby version
 ruby '2.3.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -40,19 +40,34 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
+  # Use selenium as webdriver
   gem 'selenium-webdriver'
+  # Use bootstrap-sass as bootstrap
   gem 'bootstrap-sass'
+  # Use devise as authentication
   gem 'devise'
+  # Use rspec as test framework
   gem 'rspec-rails'
+  # Use rails_best_practices to best practices
   gem 'rails_best_practices'
+  # Use responders as respond formats
   gem 'responders'
+  # Use rubocop as code quality
   gem 'rubocop'
+  # Use simplecov as code coverage
   gem 'simplecov'
+  # Use factory_bot as factory
   gem 'factory_bot'
+  # Use faker as fake data
   gem 'ffaker'
+  # Use jquery-rails as jquery
   gem 'jquery-rails'
+  # Use angular as front end framework
   gem 'angularjs-rails'
+  # Use carrerwave as file uploader
   gem 'carrierwave'
+  # Use awesome font as icon
+  gem 'font-awesome-rails'
 end
 
 group :development do

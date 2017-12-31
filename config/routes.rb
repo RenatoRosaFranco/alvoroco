@@ -6,12 +6,12 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resources :films, only: [:index, :show]
   resources :projects, only: [:index, :show]
-  resource  :contact, only: [:create] 
+  resource  :contact, only: [:create]
   resource  :newsletter, only: [:create, :destroy]
 
   # User built-in dashboard
   # @implemented
-  namespace :dashboard do 
+  namespace :dashboard do
   	get '', to: 'home#index'
   end
 
@@ -21,13 +21,13 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # @implemented
-  namespace :api, constraint: { subdomain: 'api' } do 
-  	namespace :v1 do 
-  	 with_options only: :index do |list|
-  	 	list.resources :films 
-  	 	list.resources :projects	
+  namespace :api, constraint: { subdomain: 'api' } do
+  	namespace :v1 do
+  	 with_options only: [:index, :show] do |list|
+  	 	list.resources :films
+  	 	list.resources :projects
   	 	list.resources :videos
-  	  end	
+  	  end
   	end
   end
 end
