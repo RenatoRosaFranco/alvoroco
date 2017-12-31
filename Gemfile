@@ -57,7 +57,7 @@ group :development, :test do
   # Use simplecov as code coverage
   gem 'simplecov'
   # Use factory_bot as factory
-  gem 'factory_bot'
+  gem 'factory_girl_rails'
   # Use faker as fake data
   gem 'ffaker'
   # Use jquery-rails as jquery
@@ -70,6 +70,8 @@ group :development, :test do
   gem 'font-awesome-rails'
   # Use rails_admin as fastly admin dashboard
   gem 'rails_admin'
+  # Use rails-erd to pdf MER
+  gem 'rails-erd'
 end
 
 group :development do

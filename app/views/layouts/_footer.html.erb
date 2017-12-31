@@ -4,12 +4,13 @@
   	 	 <div class="col-md-12">
            <div class="col-md-4 col-sm-4 col-xs-4">
              <ul class='list-unstyled'>
-                <li><h5>COPYRIGHT &copy <strong>ALVOROÇO
-                FILMES</strong> <%= Date.today.year %></p></li>
-                <li><p>Engeneering by <a href=''><b>CODE7EVEN</b></a></p></li>
+                <li><%= image_tag('', class: 'logo') %></li>
+                <li><h5>Engeneering by <a href='http://code7even.com'
+                target='_blank'><b>CODE7EVEN</b></a></p></li>
+                <li><small>SOFTWARE <a>DEVELOPMENT</a> AND <a>CONSULTANCE</a>.</p></li>
              </ul>
            </div>
-           <div class="col-md-4 col-sm-4 col-xs-4">
+           <div class="col-md-4 col-sm-4 col-xs-4" id='midia'>
              <ul class='list-unstyled list-inline text-center'>
               <li><a href="#"><%= fa_icon 'twitter' %></a></li>
               <li><a href="#"><%= fa_icon 'facebook' %></a></li>
@@ -17,13 +18,33 @@
             </ul>
            </div>
            <div class="col-md-4 col-sm-4 col-xs-4">
-             <ul class='list-unstyled list-inline'>
-               <li><%= link_to 'Politica de Privacidade', '' %></li>
-               <li><%= link_to 'Termos de Uso', '' %></li>
-               <li><%= link_to 'Cookies', '' %></li>
-             </ul>
+             <ul class='list-unstyled'>
+               <li><h4><strong><i class='glyphicon glyphicon-search'></i> EXTRAS</strong></h4></li>
+               <ul class='list-unstyled list-inline'>
+                  <li><%= link_to 'POLITICA DE PRIVACIDADE', '' %></li>
+                  <li><%= link_to 'TERMOS DE USO', '' %></li>
+                  <li><%= link_to 'COOKIES', '' %></li>
+               </ul><!-- list-unstyled -->
+               <li><h5>COPYRIGHT &copy <strong>ALVOROÇO
+               FILMES</strong> <%= Date.today.year %></h5></li>
+             </ul><!-- list-unstyled -->
            </div>
-  	 	 </div>
-  	 </div>
-  </div>
+
+           <div class="col-md-12 col-sm-12 col-xs-12">
+             <ul class='list-unstyled text-center'>
+                <li><h4><strong><i
+                class='glyphicon glyphicon-search'></i> SITEMAP</strong></h4></li>
+                <ul class='list-unstyled list-inline'>
+                   <li><%= link_to 'HOME',     '#home'     %></li>
+                   <li><%= link_to 'SOBRE',    '#about'    %></li>
+                   <li><%= link_to 'PROJETOS', '#projects' %></li>
+                   <li><%= link_to 'FILMES',   '#films'    %></li>
+                   <li><%= link_to 'CONTATO',  '#contact'  %></li>
+                </ul>
+             </ul><!-- list-unstyled
+           </div><!-- col-md-12 -->
+
+  	 	 </div><!-- col-md-12 -->
+  	 </div><!-- row -->
+  </div><!-- container -->
 </footer>

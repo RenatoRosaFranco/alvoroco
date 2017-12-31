@@ -18,14 +18,14 @@
 //= require_tree .
 
 
-// Angular Module 
+// Angular Module
 // @implemented
 var app = angular.module('app', []);
 app.controller('ApplicationController', ['$http', '$log', function($http, $log){
-  
+
 }]);
 
-// FilmsController 
+// FilmsController
 // @implemented
 app.controller('FilmsController', ['$http', '$log', function($http, $log){
    var alvoroco = this;
@@ -34,7 +34,7 @@ app.controller('FilmsController', ['$http', '$log', function($http, $log){
    // http request
    // @implemented
    $http({
-   	 url: '/api/v1/films',
+   	 url: 'v1/films',
    	 method: 'GET'
    }).then(function (response){
    	alvoroco.films = response.data;
@@ -51,7 +51,7 @@ app.controller('TabController', function(){
 	var alvoroco = this;
 	alvoroco.tab = 1;
 
-	// Set tab 
+	// Set tab
 	// @implemented
 	this.setTab = function(tab){
 	 alvoroco.tab = tab;
@@ -71,11 +71,11 @@ app.controller('TabController', function(){
 app.controller('ProjectsController', ['$http', '$log', function($http, $log){
 	var alvoroco = this;
 	alvoroco.projects || [];
-    
+
     // http request
     // @implemented
 	$http({
-	  url: '/api/v1/projects',
+	  url: 'v1/projects',
 	  method: 'GET'
 	}).then(function (response){
 	  alvoroco.projects = response.data;

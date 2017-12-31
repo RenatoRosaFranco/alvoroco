@@ -3,14 +3,15 @@
 <% provide :title, 'Home' %>
 
 <div id='home' class='jumbotron'>
-   <div class='container'>
+ <div class='container'>
 	 <div class='row'>
-		<div class='col-md-12 col-md-offset-1'>
-		    <ul class='list-unstyled'>
-         <li><h4>NÓS SOMOS A ALVOROÇO FILMES</h4></li>
-			   <li><h1><strong>ALVOROÇO FILMES</strong></h1></li>
-			   <li><p> Lorem ipsum lorem siamet dolor.</p></li>
-		    </ul><!-- list-unstyled -->
+		  <div class='col-md-11 col-md-offset-1'>
+        <ul class='list-unstyled'>
+         <li><h4 class='text-left'>NÓS SOMOS A ALVOROÇO FILMES</h4></li>
+         <li><h1 class='text-center'><strong>ALVOROÇO
+         <i class='glyphicon glyphicon-search'></i> FILMES</strong></h1></li>
+         <li><p class='text-right'> Lorem ipsum lorem siamet dolor.</p></li>
+        </ul><!-- list-unstyled -->
 		 </div><!--  col-md-12 -->
 	  </div><!-- row -->
    </div><!-- container -->
@@ -155,12 +156,15 @@
    	  		   <li><br></li>
    	  		</ul><!-- list-unstyled -->
 
-   	  		<div class='project col-md-4 col-xs-6 col-sm-6' ng-repeat="project in projectCtrl.projects">
-   	  		  <div class='panel panel-default'>
+   	  		<div class='col-md-4 col-xs-6 col-sm-6'
+           ng-repeat="project in projectCtrl.projects">
+   	  		  <div class='project panel panel-default'>
    	  		  	<ul class='list-unstyled padding'>
    	  		  	   <li><a href=''><h4><strong>{{ project.name }}</strong></h4></li></a>
    	  		  	   <li><p>{{ project.description | limitTo : 70 }}</p></li>
-   	  		  	   <li><%= link_to 'VER MAIS', '', class: 'btn btn-primary btn-lg top' %></li>
+   	  		  	   <li><button class='btn btn-primary btn-lg top'>
+   	  		  	     VER MAIS
+   	  		  	   </button></li>
    	  		  	</ul><!-- list-unstyled -->
    	  		  </div><!-- panel panel-default -->
    	  		</div><!-- col-md-4 -->
@@ -177,7 +181,6 @@
   	   	  <ul class='list-unstyled text-center'>
   	   	  	 <li><h1><strong><i class='glyphicon glyphicon-search'></i> FILMES</h1></strong></li>
   	   	  	 <li><p>Conheça nossos filmes</p></li>
-  	   	  	 <li><hr></li>
   	   	  </ul><!-- list-unstyled -->
 
   	   	  <div class='col-md-12'>
@@ -192,7 +195,7 @@
   	   	  </div><!-- col-md-12 -->
 
   	   	  <div class='film col-md-4 col-sm-4 col-xs-6'
-            ng-repeat="film in filmCtrl.films | filter: name | limitTo: 6 ">
+            ng-repeat="film in filmCtrl.films | filter: name | limitTo: 3 ">
   	   	  	 <div class='panel panel-default'>
               <div class='thumb'></div>
   	   	  	 	<ul class='list-unstyled text-center padding'>
