@@ -68,6 +68,8 @@ group :development, :test do
   gem 'carrierwave'
   # Use awesome font as icon
   gem 'font-awesome-rails'
+  # Use rails_admin as fastly admin dashboard
+  gem 'rails_admin'
 end
 
 group :development do
