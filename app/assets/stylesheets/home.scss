@@ -214,6 +214,44 @@
 	 }
 	}
 
+	// Mobile
+	// @implemented
+	#mobile {
+	  position: relative;
+		background-color: #000;
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		h1 {
+		 position: relative;
+		 color: red;
+		 font-weight: bold;
+		}
+
+		p {
+		 position: relative;
+		 font-size: 16px;
+		 color: #FFF;
+		}
+
+	 button {
+		position: relative;
+		border: 1px solid #999;
+		background-color: inherit;
+		color: #999;
+		font-weight: bold;
+		text-transform: uppercase;
+		transition: 0.30s;
+		&.over, &:hover {;
+		 position: relative;
+		 border: 1px solid #999;
+		 background-color: #999;
+		 color: #FFF;
+		 transition: 0.30s;
+		}
+	 }
+	}
+
 	// Contact
 	// @implemented
 	#contact {
@@ -309,7 +347,8 @@
 	// @implemented
 	footer {
 	 position: relative;
-	 margin-top: 40px;
+	 background-color: #000;
+	 padding-top: 40px;
 	 margin-bottom: 0px !important;
 	 padding-bottom: 20px;
 
